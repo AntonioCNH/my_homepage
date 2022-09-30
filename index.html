@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <script src="./clock.js" type="text/javascript" defer="defer"></script>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <title>
+        Homepage!
+    </title>
+
+</head>
+
+<body>
+    <div class="cover1"></div>
+    <div class="cover2">
+        <div id="parent">
+            <div id="headshot">
+                <img src="./figure/pik.jpg" id="circle" />
+            </div>
+            <div id="name">
+                <p class="word3">Anto</p>
+            </div>
+            <div id="information">
+                <p class="word2">中国科学技术大学<br><br></p>
+                <p class="word2">计算机科学与技术学院<br><br></p>
+                <p class="word2">Email:andongniao12@mail.ustc.edu.cn</p>
+            </div>
+            <div id="explain">
+                <p class="word1">本学期课程</p>
+            </div>
+            <div id="github">
+                <a href="https://github.com/AntonioCNH">
+                    <img src="./figure/github.svg" width="50px" height="50px" />
+                </a>
+            </div>
+
+            <div id="ustc">
+                <a href="https://www.ustc.edu.cn/">
+                    <img src="./figure/ustc.png" width="50px" height="50px">
+                </a>
+            </div>
+
+            <div id="gitlab">
+                <a href="https://gitlab.eduxiji.net/Antonio">
+                    <img src="./figure/gitlab.svg" width="50px" height="50px" />
+                </a>
+            </div>
+
+            <div id="form">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-0pky">课程名称<br></th>
+                            <th class="tg-0pky">课程主页<br></th>
+                            <th class="tg-0pky">参考教材<br></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-0pky">编译原理<br></td>
+
+                            <td class="tg-0pky"><a href="http://202.38.79.174/compiler_staff/2022fall-compiler_cminus/"
+                                    target="_blank">gitlab实验主页</a><br></td>
+
+
+                            <td class="tg-0pky"><a href="./doc/compilation.pdf" target="_blank">《编译原理》</a><br></td>
+
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">算法基础<br></td>
+
+                            <td class="tg-0pky"><a href="http://202.38.86.171/" target="_blank">课程主页 </a><br></td>
+
+
+                            <td class="tg-0pky"><a href="./doc/Introduction_to_algorithms-3rd Edition.pdf"
+                                    target="_blank">《Introduction to algorithms》</a><br></td>
+
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">计算机网络<br></td>
+
+                            <td class="tg-0pky"><a href="https://course.ustc.edu.cn/portal"
+                                    target="_blank">瀚海教学网</a><br></td>
+
+
+                            <td class="tg-0pky"><a
+                                    href="./doc/Computer Networking A Top-Down Approach (7th Edition)@www.java1234.com.pdf"
+                                    target="_blank">《Computer Networking A Top-Down Approach》</a><br></td>
+
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">……</td>
+                            <td class="tg-0pky">……</td>
+                            <td class="tg-0pky">……</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="clock">
+                <p id="time"> </p>
+                <p id="date"> </p>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+    <canvas class="fireworks" style="position: fixed; left:0; top: 0; z-index: 2; pointer-events: none;" ></canvas>
+    <script type="text/javascript" src="./js/aixin.js"></script>
+    <script type="text/javascript" src="./js/anime.min.js"></script>
+    <script type="text/javascript" src="./js/fireworks.js"></script>
+    </script>
+</body>
+
+</html>
