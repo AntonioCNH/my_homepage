@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="applicable-device" content="pc,moblie">
+    <meta http-equiv="Cache-Control" content="no-transfrom">
     <script src="./clock.js" type="text/javascript" defer="defer"></script>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="./style-moblie.css" rel="stylesheet" type="text/css" media="screen and (min-width:20px")/>
+    <link href="./style-pc.css" rel="stylesheet" type="text/css" media="screen and (min-width:720px") />
+    
     <title>
         Homepage!
     </title>
@@ -29,6 +33,7 @@
             <div id="explain">
                 <p class="word1">本学期课程</p>
             </div>
+            <div id="pic">
             <div id="github">
                 <a href="https://github.com/AntonioCNH">
                     <img src="./figure/github.svg" width="50px" height="50px" />
@@ -46,7 +51,7 @@
                     <img src="./figure/gitlab.svg" width="50px" height="50px" />
                 </a>
             </div>
-
+            </div>
             <div id="form">
                 <table class="tg">
                     <thead>

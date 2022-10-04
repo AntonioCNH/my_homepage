@@ -1,0 +1,241 @@
+@charset "utf-8";
+#bkg1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 10%;
+}
+
+#parent {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(25, 50px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    min-width: 200px;
+}
+
+
+
+#headshot { 
+    grid-area: 4 / 6 / 8 / 8;
+    align-items: center; 
+    text-align: center;
+    justify-items: center;
+}
+
+#name {
+    grid-area: 8 / 6 / 9 / 8;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+
+#information { 
+    grid-area: 5 / 9 / 7 / 13; 
+    align-items: center;
+    text-align: left;
+}
+
+#explain { 
+    grid-area: 10 / 6 / 11 / 8; 
+    text-align: center;
+}
+
+#form { 
+    grid-area: 11 / 7 / 18 / 11; 
+}
+
+/*#sidebar { 
+    grid-area: 9 / 30 / 12 / 31;  
+    grid-column: 30 / 31;
+    grid-row: 9 / 12;
+} */
+
+/*#github {
+    grid-area: 23 / 8 / 24 / 9;
+    align-items: left;
+    text-align: left;
+}
+
+#ustc {
+    grid-area: 23 / 9 / 24 / 10;
+    align-items: left;
+    text-align: left;
+}
+
+#gitlab {
+    grid-area: 23 / 10 / 24 / 11;
+    align-items: left;
+    text-align: left;
+}*/
+
+
+/*.rightSidebar {
+    width: 50px;
+    margin-left: 90%;
+    margin-top: 20%;
+    position: fixed;
+    height: 150px;
+}*/
+
+#clock { 
+    grid-area:  19 / 6 / 23 / 12;
+    text-align: center;
+
+}
+
+#pic{
+    grid-area: 23 / 6 / 24 / 12;
+    display: flex;
+    justify-content: center;
+}
+
+#github{
+    margin-right: 5%;
+}
+
+#gitlab{
+    margin-left: 5%;
+}
+
+#ustc{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.text {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.1em;
+    font-size: 12px;
+    padding: 20px 0 0;
+}
+
+#time {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.05em;
+    font-size: 64px;
+}
+
+#date {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: #daf6ff;
+    text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+
+
+#copyrigth { 
+    grid-area: 15 / 7 / 16 / 9; 
+}
+
+
+#circle {
+    border-radius: 50%;
+    width: 75%;
+    margin-top: 10%;
+    animation: rotate 10s linear infinite;
+}
+
+#circle:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url(https://api.dujin.org/bing/1920.php);
+    min-width: 400px;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.cover1 {
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.cover2 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    overflow: auto;
+}
+
+.word1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bolder;
+    text-shadow: #000 1px 0 0, #000 0 1px 0, #000 1px 0 0, #000 0 1px 0;
+}
+
+.word2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.word3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    color: #fff;
+}
+
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;
+            font-family: 'Courier New', Courier, monospace; font-weight: bolder;}
+
+
+

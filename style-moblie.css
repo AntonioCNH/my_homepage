@@ -1,3 +1,4 @@
+@charset "utf-8";
 #bkg1 {
     position: absolute;
     width: 100%;
@@ -22,38 +23,41 @@
 
 #parent {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 50px);
-    grid-template-rows: repeat(25, 50px);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(28, 50px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    min-width: 200px;
 }
 
+
+
 #headshot { 
-    grid-area: 4 / 9 / 8 / 13;
+    grid-area: 5 / 4 / 9 / 6;
     align-items: center; 
     text-align: center;
-    vertical-align: bottom;
+    justify-items: center;
 }
 
 #name {
-    grid-area: 8 / 9 / 9 / 13;
+    grid-area: 9 / 4 / 10 / 6;
     align-items: center;
     text-align: center;
-    vertical-align: middle;
+    justify-items: center;
 }
 
 #information { 
-    grid-area: 5 / 14 / 7 / 20; 
+    grid-area: 11 / 3 / 14 / 6; 
     align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 #explain { 
-    grid-area: 10 / 10 / 11 / 20; 
+    grid-area: 14 / 3 / 15 / 6; 
 }
 
 #form { 
-    grid-area: 12 / 10 / 18 / 27; 
+    grid-area: 16 / 3 / 24 / 7; 
 }
 
 /*#sidebar { 
@@ -62,17 +66,24 @@
     grid-row: 9 / 12;
 } */
 
-#github {
-    grid-area: 23 / 14 / 24 / 15;
+/*#github {
+    grid-area: 23 / 8 / 24 / 9;
+    align-items: left;
+    text-align: left;
 }
 
 #ustc {
-    grid-area: 23 / 16 / 24 / 17;
+    grid-area: 23 / 9 / 24 / 10;
+    align-items: left;
+    text-align: left;
 }
 
 #gitlab {
-    grid-area: 23 / 18 / 24 / 19;
-}
+    grid-area: 23 / 10 / 24 / 11;
+    align-items: left;
+    text-align: left;
+}*/
+
 
 /*.rightSidebar {
     width: 50px;
@@ -83,9 +94,29 @@
 }*/
 
 #clock { 
-    grid-area:  18 / 13 / 22 / 30; 
+    grid-area:  24 / 3 / 27 / 6;
+    text-align: center;
+
 }
 
+#pic{
+    grid-area: 27 / 4 / 28 / 6;
+    display: flex;
+    justify-content: center;
+}
+
+#github{
+    margin-right: 5%;
+}
+
+#gitlab{
+    margin-left: 5%;
+}
+
+#ustc{
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .text {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -102,7 +133,7 @@
 
 #time {
     font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+    text-align: center;
     color: #daf6ff;
     text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
     letter-spacing: 0.05em;
@@ -111,7 +142,7 @@
 
 #date {
     font-family: 'Courier New', Courier, monospace;
-    text-align: left;
+    text-align: center;
     color: #daf6ff;
     text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
     letter-spacing: 0.1em;
@@ -127,8 +158,8 @@
 
 #circle {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 75%;
+    margin-top: 20%;
     animation: rotate 10s linear infinite;
 }
 
@@ -149,9 +180,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(https://api.dujin.org/bing/1920.php);
-    min-width: 400px;
-    min-height: 600px;
+    background-image: url(https://api.dujin.org/bing/m.php);
     overflow: hidden;
 }
 
@@ -204,6 +233,3 @@ body {
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top;
             font-family: 'Courier New', Courier, monospace; font-weight: bolder;}
-
-
-
